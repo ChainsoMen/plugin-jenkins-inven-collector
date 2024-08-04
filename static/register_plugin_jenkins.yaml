@@ -1,0 +1,17 @@
+---
+name: Jenkins Collector
+provider: jenkins
+service_type: inventory.Collector
+registry_config: { }
+registry_type: DOCKER_HUB
+image: chanjin/plugin-jenkins-inven-collector
+capability:
+  supported_schema:
+    - jenkins_schema
+tags:
+  description: jenkins collector
+  icon: https://www.svgrepo.com/show/353929/jenkins.svg
+  long_description: Collects data from jenkins
+labels:
+  - Jenkins
+template: { }

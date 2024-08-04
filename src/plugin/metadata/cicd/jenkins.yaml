@@ -1,0 +1,21 @@
+search:
+  fields:
+    - Job Name: data.name
+    - Build Number: data.lastBuild.number
+table:
+  sort:
+    key: data.lastBuild.number
+    desc: true
+  fields:
+    - Job Name: data.name
+    - Status: data.lastBuild.result
+    - Last Build Number: data.lastBuild.number
+    - Last Build Duration: data.lastBuild.duration
+tabs.0:
+  name: Details
+  type: item
+  fields:
+    - Job Name: data.name
+    - Status: data.lastBuild.result
+    - Last Build Number: data.lastBuild.number
+    - Last Build Duration: data.lastBuild.duration

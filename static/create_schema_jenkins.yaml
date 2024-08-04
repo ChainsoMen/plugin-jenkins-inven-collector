@@ -1,0 +1,23 @@
+---
+name: jenkins_schema
+service_type: secret.credentials
+schema:
+  properties:
+    jenkins-username:
+      title: Jenkins Username
+      type: string
+    jenkins-api-token:
+      title: Jenkins API Token
+      type: string
+    jenkins-server-url:
+      title: Jenkins Server URL
+      type: string
+  required:
+    - jenkins-username
+    - jenkins-api-token
+    - jenkins-server-url
+  type: object
+labels:
+  - Jenkins
+tags:
+  description: Jenkins Credentials

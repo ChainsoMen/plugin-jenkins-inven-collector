@@ -1,0 +1,34 @@
+---
+provider: jenkins
+name: Jenkins
+tags:
+  icon: https://www.svgrepo.com/show/353929/jenkins.svg
+  label: Jenkins
+template:
+  service_account:
+    schema:
+      properties:
+        account_id:
+          title: account_id
+          type: string
+      required:
+        - account_id
+      type: object
+capability:
+  supported_schema:
+    - jenkins_schema
+metadata:
+  view:
+    layouts:
+      help:service_account:create:
+        name: Creation Help
+        options:
+          markdown:
+            en: "# Getting Started with Jenkins
+
+              Easily manage and track your Jobs through Jenkins.
+              "
+            ko: "# Jenkins 시작 가이드
+
+                  Jenkins 통해 손쉽게 작업들을 관리하고 추적할 수 있습니다.
+              "

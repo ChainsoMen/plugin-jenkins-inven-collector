@@ -1,0 +1,6 @@
+options:
+  jenkins-server-url: "http://35.216.8.149:8080/"
+secret_data:
+  jenkins-server-url: "http://35.216.8.149:8080/"
+  jenkins-username: "ckswls56"
+  jenkins-api-token: "11e29f02f5cf6378dacc5d61d2ac484151"
