@@ -7,15 +7,61 @@ table:
     key: data.lastBuild.number
     desc: true
   fields:
-    - Job Name: data.name
-    - Status: data.lastBuild.result
-    - Last Build Number: data.lastBuild.number
-    - Last Build Duration: data.lastBuild.duration
+      - Job Name: data.name
+      - Last Build Number: data.lastBuild.number
+      - Last Build Url: data.lastBuild.url
+      - Last CompletedBuild Numer: data.lastCompletedBuild.number
+      - Last CompletedBuild Url: data.lastCompletedBuild.url
+      - Last Failed Build Numer: data.lastFailedBuild.number
+      - Last Failed Build Url: data.lastFailedBuild.url
+      - Last StableBuild Numer: data.lastStableBuild.number
+      - Last StableBuild Url: data.lastStableBuild.url
+      - Last Successful Build Numer: data.lastSuccessfulBuild.number
+      - Last Successful Build Url: data.lastSuccessfulBuild.url
+      - Last Unstable Build Numer: data.lastUnstableBuild.number
+      - Last Unstable Build Url: data.lastUnstableBuild.url
+      - Last Unsuccessful Build Numer: data.lastUnsuccessfulBuild.number
+      - Last Unsuccessful Build Url: data.lastUnsuccessfulBuild.url
+      - Next Build Number: data.nextBuildNumber
+      - Url: data.url
+      - Builds: data.builds
+      - First Build: data.firstBuild.number
+      - Last Successful Build: data.lastSuccessfulBuild.number
+      - Last Failed Build: data.lastFailedBuild.number
+      - Next Build Number: data.nextBuildNumber
+      - Health Report: data.healthReport[0].description
+
 tabs.0:
   name: Details
   type: item
   fields:
-    - Job Name: data.name
-    - Status: data.lastBuild.result
-    - Last Build Number: data.lastBuild.number
-    - Last Build Duration: data.lastBuild.duration
+      - Job Name: data.name
+      - Last Build Number: data.lastBuild.number
+      - Last Build Url: data.lastBuild.url
+      - Last CompletedBuild Numer: data.lastCompletedBuild.number
+      - Last CompletedBuild Url: data.lastCompletedBuild.url
+      - Last Failed Build Numer: data.lastFailedBuild.number
+      - Last Failed Build Url: data.lastFailedBuild.url
+      - Last StableBuild Numer: data.lastStableBuild.number
+      - Last StableBuild Url: data.lastStableBuild.url
+      - Last Successful Build Numer: data.lastSuccessfulBuild.number
+      - Last Successful Build Url: data.lastSuccessfulBuild.url
+      - Last Unstable Build Numer: data.lastUnstableBuild.number
+      - Last Unstable Build Url: data.lastUnstableBuild.url
+      - Last Unsuccessful Build Numer: data.lastUnsuccessfulBuild.number
+      - Last Unsuccessful Build Url: data.lastUnsuccessfulBuild.url
+      - Next Build Number: data.nextBuildNumber
+      - Url: data.url
+      - First Build: data.firstBuild.number
+      - Last Successful Build: data.lastSuccessfulBuild.number
+      - Last Failed Build: data.lastFailedBuild.number
+      - Next Build Number: data.nextBuildNumber
+      - Health Report: data.healthReport[0].description
+
+tabs.2:
+  name: Build List
+  type: table
+  root_path: data.builds
+  fields:
+    - Build Numver: number
+    - Build Url: url

@@ -1,0 +1,633 @@
+---
+match_rules:
+  '1':
+  - name
+  - reference.resource_id
+  - account
+  - provider
+resource:
+  group: cicd
+  is_major: true
+  is_primary: true
+  json_metadata: '{"view": {"search": [{"name": "Job Name", "key": "data.name", "type":
+    "text"}, {"name": "Build Number", "key": "data.lastBuild.number", "type": "text"}],
+    "table": {"layout": {"type": "query-search-table", "options": {"default_sort":
+    {"key": "data.lastBuild.number", "desc": true}, "fields": [{"name": "Job Name",
+    "key": "data.name", "type": "text"}, {"name": "Status", "key": "data.lastBuild.result",
+    "type": "text"}, {"name": "Last Build Number", "key": "data.lastBuild.number",
+    "type": "text"}, {"name": "Last Build Duration", "key": "data.lastBuild.duration",
+    "type": "text"}]}, "name": "Main Table"}}, "sub_data": {"layouts": [{"name": "Details",
+    "type": "item", "options": {"fields": [{"name": "Job Name", "key": "data.name",
+    "type": "text"}, {"name": "Status", "key": "data.lastBuild.result", "type": "text"},
+    {"name": "Last Build Number", "key": "data.lastBuild.number", "type": "text"},
+    {"name": "Last Build Duration", "key": "data.lastBuild.duration", "type": "text"}]}}]}}}'
+  labels: []
+  metadata: null
+  name: JenkinsJob
+  provider: jenkins
+  service_code: null
+  tags: {}
+resource_type: inventory.CloudServiceType
+state: SUCCESS
+
+---
+match_rules:
+  '1':
+  - name
+  - reference.resource_id
+  - account
+  - provider
+resource:
+  account: null
+  cloud_service_group: cicd
+  cloud_service_type: JenkinsJob
+  data:
+    _class: org.jenkinsci.plugins.workflow.job.WorkflowJob
+    actions:
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - {}
+    - _class: org.jenkinsci.plugins.displayurlapi.actions.JobDisplayAction
+    - {}
+    - {}
+    - {}
+    - _class: com.cloudbees.plugins.credentials.ViewCredentialsAction
+    buildable: true
+    builds:
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 17.0
+      url: http://35.216.8.149:8080/job/shortood_test/17/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 16.0
+      url: http://35.216.8.149:8080/job/shortood_test/16/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 15.0
+      url: http://35.216.8.149:8080/job/shortood_test/15/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 14.0
+      url: http://35.216.8.149:8080/job/shortood_test/14/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 13.0
+      url: http://35.216.8.149:8080/job/shortood_test/13/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 12.0
+      url: http://35.216.8.149:8080/job/shortood_test/12/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 11.0
+      url: http://35.216.8.149:8080/job/shortood_test/11/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 10.0
+      url: http://35.216.8.149:8080/job/shortood_test/10/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 9.0
+      url: http://35.216.8.149:8080/job/shortood_test/9/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 8.0
+      url: http://35.216.8.149:8080/job/shortood_test/8/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 7.0
+      url: http://35.216.8.149:8080/job/shortood_test/7/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 6.0
+      url: http://35.216.8.149:8080/job/shortood_test/6/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 5.0
+      url: http://35.216.8.149:8080/job/shortood_test/5/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 4.0
+      url: http://35.216.8.149:8080/job/shortood_test/4/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 3.0
+      url: http://35.216.8.149:8080/job/shortood_test/3/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 2.0
+      url: http://35.216.8.149:8080/job/shortood_test/2/
+    - _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 1.0
+      url: http://35.216.8.149:8080/job/shortood_test/1/
+    color: blue
+    concurrentBuild: true
+    description: ''
+    displayName: shortood_test
+    displayNameOrNull: null
+    firstBuild:
+      _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 1.0
+      url: http://35.216.8.149:8080/job/shortood_test/1/
+    fullDisplayName: shortood_test
+    fullName: shortood_test
+    healthReport:
+    - description: 'Build stability: No recent builds failed.'
+      iconClassName: icon-health-80plus
+      iconUrl: health-80plus.png
+      score: 100.0
+    inQueue: false
+    keepDependencies: false
+    lastBuild:
+      _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 17.0
+      url: http://35.216.8.149:8080/job/shortood_test/17/
+    lastCompletedBuild:
+      _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 17.0
+      url: http://35.216.8.149:8080/job/shortood_test/17/
+    lastFailedBuild:
+      _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 10.0
+      url: http://35.216.8.149:8080/job/shortood_test/10/
+    lastStableBuild:
+      _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 17.0
+      url: http://35.216.8.149:8080/job/shortood_test/17/
+    lastSuccessfulBuild:
+      _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 17.0
+      url: http://35.216.8.149:8080/job/shortood_test/17/
+    lastUnstableBuild: null
+    lastUnsuccessfulBuild:
+      _class: org.jenkinsci.plugins.workflow.job.WorkflowRun
+      number: 10.0
+      url: http://35.216.8.149:8080/job/shortood_test/10/
+    name: shortood_test
+    nextBuildNumber: 18.0
+    property:
+    - _class: com.coravy.hudson.plugins.github.GithubProjectProperty
+    - _class: org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty
+    queueItem: null
+    resumeBlocked: false
+    url: http://35.216.8.149:8080/job/shortood_test/
+  instance_size: 0.0
+  instance_type: null
+  ip_addresses: []
+  json_data: null
+  json_metadata: null
+  launched_at: null
+  metadata:
+    view:
+      search:
+      - key: data.name
+        name: Job Name
+        type: text
+      - key: data.lastBuild.number
+        name: Build Number
+        type: text
+      sub_data:
+        layouts:
+        - name: Details
+          options:
+            fields:
+            - key: data.name
+              name: Job Name
+              type: text
+            - key: data.lastBuild.result
+              name: Status
+              type: text
+            - key: data.lastBuild.number
+              name: Last Build Number
+              type: text
+            - key: data.lastBuild.duration
+              name: Last Build Duration
+              type: text
+          type: item
+      table:
+        layout:
+          name: Main Table
+          options:
+            default_sort:
+              desc: true
+              key: data.lastBuild.number
+            fields:
+            - key: data.name
+              name: Job Name
+              type: text
+            - key: data.lastBuild.result
+              name: Status
+              type: text
+            - key: data.lastBuild.number
+              name: Last Build Number
+              type: text
+            - key: data.lastBuild.duration
+              name: Last Build Duration
+              type: text
+          type: query-search-table
+  name: shortood_test
+  provider: jenkins
+  reference: null
+  region_code: null
+  tags: {}
+resource_type: inventory.CloudService
+state: SUCCESS
+
+---
+match_rules:
+  '1':
+  - name
+  - reference.resource_id
+  - account
+  - provider
+resource:
+  account: null
+  cloud_service_group: cicd
+  cloud_service_type: JenkinsJob
+  data:
+    _class: hudson.model.FreeStyleProject
+    actions:
+    - {}
+    - {}
+    - _class: org.jenkinsci.plugins.displayurlapi.actions.JobDisplayAction
+    - _class: com.cloudbees.plugins.credentials.ViewCredentialsAction
+    buildable: true
+    builds: []
+    color: notbuilt
+    concurrentBuild: false
+    description: null
+    disabled: false
+    displayName: test
+    displayNameOrNull: null
+    downstreamProjects: []
+    firstBuild: null
+    fullDisplayName: test
+    fullName: test
+    healthReport: []
+    inQueue: false
+    keepDependencies: false
+    labelExpression: null
+    lastBuild: null
+    lastCompletedBuild: null
+    lastFailedBuild: null
+    lastStableBuild: null
+    lastSuccessfulBuild: null
+    lastUnstableBuild: null
+    lastUnsuccessfulBuild: null
+    name: test
+    nextBuildNumber: 1.0
+    property: []
+    queueItem: null
+    scm:
+      _class: hudson.scm.NullSCM
+    upstreamProjects: []
+    url: http://35.216.8.149:8080/job/test/
+  instance_size: 0.0
+  instance_type: null
+  ip_addresses: []
+  json_data: null
+  json_metadata: null
+  launched_at: null
+  metadata:
+    view:
+      search:
+      - key: data.name
+        name: Job Name
+        type: text
+      - key: data.lastBuild.number
+        name: Build Number
+        type: text
+      sub_data:
+        layouts:
+        - name: Details
+          options:
+            fields:
+            - key: data.name
+              name: Job Name
+              type: text
+            - key: data.lastBuild.result
+              name: Status
+              type: text
+            - key: data.lastBuild.number
+              name: Last Build Number
+              type: text
+            - key: data.lastBuild.duration
+              name: Last Build Duration
+              type: text
+          type: item
+      table:
+        layout:
+          name: Main Table
+          options:
+            default_sort:
+              desc: true
+              key: data.lastBuild.number
+            fields:
+            - key: data.name
+              name: Job Name
+              type: text
+            - key: data.lastBuild.result
+              name: Status
+              type: text
+            - key: data.lastBuild.number
+              name: Last Build Number
+              type: text
+            - key: data.lastBuild.duration
+              name: Last Build Duration
+              type: text
+          type: query-search-table
+  name: test
+  provider: jenkins
+  reference: null
+  region_code: null
+  tags: {}
+resource_type: inventory.CloudService
+state: SUCCESS
+
+---
+match_rules:
+  '1':
+  - name
+  - reference.resource_id
+  - account
+  - provider
+resource:
+  account: null
+  cloud_service_group: cicd
+  cloud_service_type: JenkinsJob
+  data:
+    _class: hudson.model.FreeStyleProject
+    actions:
+    - {}
+    - {}
+    - {}
+    - {}
+    - _class: org.jenkinsci.plugins.displayurlapi.actions.JobDisplayAction
+    - _class: com.cloudbees.plugins.credentials.ViewCredentialsAction
+    buildable: true
+    builds:
+    - _class: hudson.model.FreeStyleBuild
+      number: 9.0
+      url: http://35.216.8.149:8080/job/test_gradle/9/
+    - _class: hudson.model.FreeStyleBuild
+      number: 8.0
+      url: http://35.216.8.149:8080/job/test_gradle/8/
+    - _class: hudson.model.FreeStyleBuild
+      number: 7.0
+      url: http://35.216.8.149:8080/job/test_gradle/7/
+    - _class: hudson.model.FreeStyleBuild
+      number: 6.0
+      url: http://35.216.8.149:8080/job/test_gradle/6/
+    - _class: hudson.model.FreeStyleBuild
+      number: 5.0
+      url: http://35.216.8.149:8080/job/test_gradle/5/
+    - _class: hudson.model.FreeStyleBuild
+      number: 4.0
+      url: http://35.216.8.149:8080/job/test_gradle/4/
+    - _class: hudson.model.FreeStyleBuild
+      number: 3.0
+      url: http://35.216.8.149:8080/job/test_gradle/3/
+    - _class: hudson.model.FreeStyleBuild
+      number: 2.0
+      url: http://35.216.8.149:8080/job/test_gradle/2/
+    - _class: hudson.model.FreeStyleBuild
+      number: 1.0
+      url: http://35.216.8.149:8080/job/test_gradle/1/
+    color: red
+    concurrentBuild: false
+    description: ''
+    disabled: false
+    displayName: test_gradle
+    displayNameOrNull: null
+    downstreamProjects: []
+    firstBuild:
+      _class: hudson.model.FreeStyleBuild
+      number: 1.0
+      url: http://35.216.8.149:8080/job/test_gradle/1/
+    fullDisplayName: test_gradle
+    fullName: test_gradle
+    healthReport:
+    - description: 'Build stability: 1 out of the last 5 builds failed.'
+      iconClassName: icon-health-60to79
+      iconUrl: health-60to79.png
+      score: 80.0
+    inQueue: false
+    keepDependencies: false
+    labelExpression: null
+    lastBuild:
+      _class: hudson.model.FreeStyleBuild
+      number: 9.0
+      url: http://35.216.8.149:8080/job/test_gradle/9/
+    lastCompletedBuild:
+      _class: hudson.model.FreeStyleBuild
+      number: 9.0
+      url: http://35.216.8.149:8080/job/test_gradle/9/
+    lastFailedBuild:
+      _class: hudson.model.FreeStyleBuild
+      number: 9.0
+      url: http://35.216.8.149:8080/job/test_gradle/9/
+    lastStableBuild:
+      _class: hudson.model.FreeStyleBuild
+      number: 8.0
+      url: http://35.216.8.149:8080/job/test_gradle/8/
+    lastSuccessfulBuild:
+      _class: hudson.model.FreeStyleBuild
+      number: 8.0
+      url: http://35.216.8.149:8080/job/test_gradle/8/
+    lastUnstableBuild: null
+    lastUnsuccessfulBuild:
+      _class: hudson.model.FreeStyleBuild
+      number: 9.0
+      url: http://35.216.8.149:8080/job/test_gradle/9/
+    name: test_gradle
+    nextBuildNumber: 10.0
+    property:
+    - _class: com.coravy.hudson.plugins.github.GithubProjectProperty
+    queueItem: null
+    scm:
+      _class: hudson.plugins.git.GitSCM
+    upstreamProjects: []
+    url: http://35.216.8.149:8080/job/test_gradle/
+  instance_size: 0.0
+  instance_type: null
+  ip_addresses: []
+  json_data: null
+  json_metadata: null
+  launched_at: null
+  metadata:
+    view:
+      search:
+      - key: data.name
+        name: Job Name
+        type: text
+      - key: data.lastBuild.number
+        name: Build Number
+        type: text
+      sub_data:
+        layouts:
+        - name: Details
+          options:
+            fields:
+            - key: data.name
+              name: Job Name
+              type: text
+            - key: data.lastBuild.result
+              name: Status
+              type: text
+            - key: data.lastBuild.number
+              name: Last Build Number
+              type: text
+            - key: data.lastBuild.duration
+              name: Last Build Duration
+              type: text
+          type: item
+      table:
+        layout:
+          name: Main Table
+          options:
+            default_sort:
+              desc: true
+              key: data.lastBuild.number
+            fields:
+            - key: data.name
+              name: Job Name
+              type: text
+            - key: data.lastBuild.result
+              name: Status
+              type: text
+            - key: data.lastBuild.number
+              name: Last Build Number
+              type: text
+            - key: data.lastBuild.duration
+              name: Last Build Duration
+              type: text
+          type: query-search-table
+  name: test_gradle
+  provider: jenkins
+  reference: null
+  region_code: null
+  tags: {}
+resource_type: inventory.CloudService
+state: SUCCESS
+
+---
+match_rules:
+  '1':
+  - name
+  - reference.resource_id
+  - account
+  - provider
+resource:
+  account: null
+  cloud_service_group: cicd
+  cloud_service_type: JenkinsJob
+  data:
+    _class: hudson.model.FreeStyleProject
+    actions:
+    - {}
+    - {}
+    - _class: org.jenkinsci.plugins.displayurlapi.actions.JobDisplayAction
+    - _class: com.cloudbees.plugins.credentials.ViewCredentialsAction
+    buildable: true
+    builds:
+    - _class: hudson.model.FreeStyleBuild
+      number: 1.0
+      url: http://35.216.8.149:8080/job/%EB%82%98%EC%B0%AC%EC%A7%84/1/
+    color: blue
+    concurrentBuild: false
+    description: null
+    disabled: false
+    displayName: 나찬진
+    displayNameOrNull: null
+    downstreamProjects: []
+    firstBuild:
+      _class: hudson.model.FreeStyleBuild
+      number: 1.0
+      url: http://35.216.8.149:8080/job/%EB%82%98%EC%B0%AC%EC%A7%84/1/
+    fullDisplayName: 나찬진
+    fullName: 나찬진
+    healthReport:
+    - description: 'Build stability: No recent builds failed.'
+      iconClassName: icon-health-80plus
+      iconUrl: health-80plus.png
+      score: 100.0
+    inQueue: false
+    keepDependencies: false
+    labelExpression: null
+    lastBuild:
+      _class: hudson.model.FreeStyleBuild
+      number: 1.0
+      url: http://35.216.8.149:8080/job/%EB%82%98%EC%B0%AC%EC%A7%84/1/
+    lastCompletedBuild:
+      _class: hudson.model.FreeStyleBuild
+      number: 1.0
+      url: http://35.216.8.149:8080/job/%EB%82%98%EC%B0%AC%EC%A7%84/1/
+    lastFailedBuild: null
+    lastStableBuild:
+      _class: hudson.model.FreeStyleBuild
+      number: 1.0
+      url: http://35.216.8.149:8080/job/%EB%82%98%EC%B0%AC%EC%A7%84/1/
+    lastSuccessfulBuild:
+      _class: hudson.model.FreeStyleBuild
+      number: 1.0
+      url: http://35.216.8.149:8080/job/%EB%82%98%EC%B0%AC%EC%A7%84/1/
+    lastUnstableBuild: null
+    lastUnsuccessfulBuild: null
+    name: 나찬진
+    nextBuildNumber: 2.0
+    property: []
+    queueItem: null
+    scm:
+      _class: hudson.scm.NullSCM
+    upstreamProjects: []
+    url: http://35.216.8.149:8080/job/%EB%82%98%EC%B0%AC%EC%A7%84/
+  instance_size: 0.0
+  instance_type: null
+  ip_addresses: []
+  json_data: null
+  json_metadata: null
+  launched_at: null
+  metadata:
+    view:
+      search:
+      - key: data.name
+        name: Job Name
+        type: text
+      - key: data.lastBuild.number
+        name: Build Number
+        type: text
+      sub_data:
+        layouts:
+        - name: Details
+          options:
+            fields:
+            - key: data.name
+              name: Job Name
+              type: text
+            - key: data.lastBuild.result
+              name: Status
+              type: text
+            - key: data.lastBuild.number
+              name: Last Build Number
+              type: text
+            - key: data.lastBuild.duration
+              name: Last Build Duration
+              type: text
+          type: item
+      table:
+        layout:
+          name: Main Table
+          options:
+            default_sort:
+              desc: true
+              key: data.lastBuild.number
+            fields:
+            - key: data.name
+              name: Job Name
+              type: text
+            - key: data.lastBuild.result
+              name: Status
+              type: text
+            - key: data.lastBuild.number
+              name: Last Build Number
+              type: text
+            - key: data.lastBuild.duration
+              name: Last Build Duration
+              type: text
+          type: query-search-table
+  name: 나찬진
+  provider: jenkins
+  reference: null
+  region_code: null
+  tags: {}
+resource_type: inventory.CloudService
+state: SUCCESS
