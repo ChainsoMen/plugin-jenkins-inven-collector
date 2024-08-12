@@ -1,5 +1,6 @@
 import logging
 import jenkins
+from xml.etree import ElementTree as ET
 
 from spaceone.core.connector import BaseConnector
 
@@ -25,3 +26,17 @@ class JenkinsConnector(BaseConnector):
         except Exception as e:
             _LOGGER.error(f"Error fetching job info from Jenkins: {e}")
             return {}
+        
+    def get_pipeline_script(self, job_name: str):
+        try:
+            config_xml = self.client.get_job_config(job_name)
+            root = ET.fromstring(config_xml)
+            pipeline_script = root.find('definition/script')
+            if pipeline_script is not None:
+                return pipeline_script.text
+            else:
+                _LOGGER.warning(f"No pipeline script found for job: {job_name}")
+                return ""
+        except Exception as e:
+            _LOGGER.error(f"Error fetching pipeline script from Jenkins: {e}")
+            return ""

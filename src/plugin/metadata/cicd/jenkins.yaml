@@ -8,6 +8,7 @@ table:
     desc: true
   fields:
       - Job Name: data.name
+      - Pipeline Script: data.pipeline_script
       - Last Build Number: data.lastBuild.number
       - Last Build Url: data.lastBuild.url
       - Last CompletedBuild Numer: data.lastCompletedBuild.number
@@ -36,6 +37,7 @@ tabs.0:
   type: item
   fields:
       - Job Name: data.name
+      - Pipeline Script: data.pipeline_script
       - Last Build Number: data.lastBuild.number
       - Last Build Url: data.lastBuild.url
       - Last CompletedBuild Numer: data.lastCompletedBuild.number

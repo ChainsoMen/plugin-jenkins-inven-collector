@@ -63,6 +63,9 @@ class JenkinsManager(BaseManager):
 
         for job in jobs:
             job_info = jenkins_connector.get_job_info(job['name'])
+            pipeline_script = jenkins_connector.get_pipeline_script(job['name'])
+            job_info['pipeline_script'] = pipeline_script
+
             cloud_service = make_cloud_service_with_metadata(
                 name=job['name'],
                 cloud_service_type=self.cloud_service_type,
