@@ -27,4 +27,22 @@ Please contact us if you need any further information. (<kr.public.wonjun@gmail.
 ## Collecting Contents
 
 * Table of Contents
-    
+
+## How to Use
+* Create Jenkins Account
+<img width="1411" alt="image" src="https://github.com/user-attachments/assets/ea8dca29-8968-474d-8925-98ece5ff9385">
+
+* Input Jenkins API Token, Server URL, Username
+<img width="1044" alt="image" src="https://github.com/user-attachments/assets/a877585e-a60b-400e-9896-8b30734e5485">
+
+* Create Jenkins Collector
+<img width="1261" alt="image" src="https://github.com/user-attachments/assets/f8804699-b8ad-411f-9053-2426a45d1788">
+
+* Collect Jenkins Information
+<img width="1020" alt="image" src="https://github.com/user-attachments/assets/51f4b47d-ef10-46bb-84ba-5c2a6310d887">
+
+* Can See Jenkins Jobs
+<img width="1018" alt="image" src="https://github.com/user-attachments/assets/c8a444ed-e871-48df-b21d-922d4368d7ee">
+
+* Can see Detail Informations
+<img width="1212" alt="image" src="https://github.com/user-attachments/assets/19cc20c6-4090-4a05-aef4-a953bf97ec90">
