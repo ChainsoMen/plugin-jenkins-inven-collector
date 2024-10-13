@@ -1,8 +1,6 @@
 name: plugin-jenkins-inven-collector docker image CI
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
     types: [ closed ]
